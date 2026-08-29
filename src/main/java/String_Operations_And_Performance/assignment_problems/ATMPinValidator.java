@@ -1,0 +1,17 @@
+package String_Operations_And_Performance.assignment_problems;
+
+public class ATMPinValidator {
+
+    public static void checkPinLength(String pin) {
+        if (pin != null && pin.length() == 4) {
+            System.out.println("PIN length OK.");
+        } else {
+            System.out.println("Invalid PIN must be exactly 4 digits.");
+        }
+    }
+
+    public static void main(String[] args) {
+        checkPinLength("482");  // Output: Invalid PIN must be exactly 4 digits.
+        checkPinLength("4820"); // Output: PIN length OK.
+    }
+}
